@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "text": "I start tasks but get distracted before finishing them.",
+    "category": "Inattention"
+  },
+  {
+    "id": 2,
+    "text": "I forget appointments, deadlines, or scheduled activities.",
+    "category": "Inattention"
+  },
+  {
+    "id": 3,
+    "text": "I lose track of details or make mistakes due to inattention.",
+    "category": "Inattention"
+  },
+  {
+    "id": 4,
+    "text": "I overlook instructions or skip steps unintentionally.",
+    "category": "Inattention"
+  },
+  {
+    "id": 5,
+    "text": "I struggle to stay focused when reading or listening.",
+    "category": "Inattention"
+  },
+  {
+    "id": 6,
+    "text": "I misplace everyday items like keys, phone, or documents.",
+    "category": "Inattention"
+  },
+  {
+    "id": 7,
+    "text": "I get sidetracked during conversations or meetings.",
+    "category": "Inattention"
+  },
+  {
+    "id": 8,
+    "text": "I struggle to manage time or estimate how long things will take.",
+    "category": "Inattention"
+  },
+  {
+    "id": 9,
+    "text": "I avoid or delay tasks that require sustained mental effort.",
+    "category": "Inattention"
+  },
+  {
+    "id": 10,
+    "text": "I frequently shift from one activity to another without completing either.",
+    "category": "Inattention"
+  },
+  {
+    "id": 11,
+    "text": "I speak or act without considering the consequences.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 12,
+    "text": "I find it hard to resist interrupting others.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 13,
+    "text": "I blurt out thoughts in situations where it\u2019s inappropriate.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 14,
+    "text": "I react emotionally without thinking things through.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 15,
+    "text": "I make impulsive purchases or decisions I later regret.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 16,
+    "text": "I struggle to delay gratification or wait my turn.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 17,
+    "text": "I finish other people\u2019s sentences or cut them off.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 18,
+    "text": "I take risks without fully evaluating them.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 19,
+    "text": "I get frustrated easily and over small things.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 20,
+    "text": "I often feel \u201con edge\u201d and react quickly.",
+    "category": "Impulsivity"
+  },
+  {
+    "id": 21,
+    "text": "I feel restless even when I\u2019m sitting still.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 22,
+    "text": "I pace, tap, or fidget frequently.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 23,
+    "text": "I get up often during situations that require staying seated.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 24,
+    "text": "I feel like I need to be constantly doing something.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 25,
+    "text": "I talk excessively or dominate discussions.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 26,
+    "text": "I find it hard to unwind or relax quietly.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 27,
+    "text": "I seek constant stimulation or movement.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 28,
+    "text": "I shift positions frequently when trying to sit still.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 29,
+    "text": "I do multiple things at once but struggle to complete them.",
+    "category": "Hyperactivity"
+  },
+  {
+    "id": 30,
+    "text": "I often feel a buildup of energy or tension without a clear cause.",
+    "category": "Hyperactivity"
+  }
+]

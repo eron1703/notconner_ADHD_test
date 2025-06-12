@@ -1,0 +1,55 @@
+.welcome-container {
+  text-align: center;
+}
+
+.welcome-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.instructions {
+  background-color: #e3f2fd;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+  text-align: left;
+}
+
+.instructions h3 {
+  color: #1976d2;
+  margin-bottom: 16px;
+}
+
+.instructions ul {
+  list-style-position: inside;
+  margin-left: 0;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  color: #424242;
+}
+
+.disclaimer {
+  background-color: #fff3e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+  text-align: left;
+}
+
+.disclaimer h3 {
+  color: #f57c00;
+  margin-bottom: 12px;
+}
+
+.disclaimer p {
+  color: #5d4037;
+  margin: 0;
+}
+
+.start-button {
+  margin-top: 32px;
+  font-size: 18px;
+  padding: 16px 32px;
+}
