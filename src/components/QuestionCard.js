@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import './QuestionCard.css';
 
 const QuestionCard = ({ question, onAnswer, currentIndex, totalQuestions }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
 
-  const options = [
+  const ratingScale = [
     { value: 0, label: 'Never' },
     { value: 1, label: 'Occasionally' },
     { value: 2, label: 'Often' },
@@ -15,47 +14,75 @@ const QuestionCard = ({ question, onAnswer, currentIndex, totalQuestions }) => {
     setSelectedAnswer(value);
   };
 
-  const handleSubmit = () => {
+  const handleNext = () => {
     if (selectedAnswer !== null) {
       onAnswer(question.id, selectedAnswer);
       setSelectedAnswer(null);
     }
   };
 
+  const handlePrevious = () => {
+    // For simplicity, we'll just go back without changing answers
+    // In a real app, you'd want to navigate to previous question
+  };
+
   const progress = ((currentIndex + 1) / totalQuestions) * 100;
+  const isLastQuestion = currentIndex === totalQuestions - 1;
 
   return (
-    <div className="question-container container">
-      <div className="question-header">
-        <h2>Question {currentIndex + 1} of {totalQuestions}</h2>
-        <div className="progress-bar">
-          <div className="progress-fill" style={{ width: `${progress}%` }}></div>
+    <div className="card">
+      <div className="card-header question-header">
+        <div className="question-info">
+          <span className="question-number">
+            Question {currentIndex + 1} of {totalQuestions}
+          </span>
         </div>
+        <div className="progress">
+          <div className="progress-bar" style={{ width: `${progress}%` }}></div>
+        </div>
+        <h2 className="question-text">{question.text}</h2>
       </div>
-
-      <div className="question-content">
-        <p className="question-text">{question.text}</p>
-        
-        <div className="options-grid">
-          {options.map((option) => (
-            <button
+      <div className="card-content">
+        <div className="radio-group">
+          {ratingScale.map((option) => (
+            <div
               key={option.value}
-              className={`option-button ${selectedAnswer === option.value ? 'selected' : ''}`}
+              className={`radio-item ${selectedAnswer === option.value ? 'selected' : ''}`}
               onClick={() => handleSelect(option.value)}
             >
-              <span className="option-value">{option.value}</span>
-              <span className="option-label">{option.label}</span>
-            </button>
+              <input
+                type="radio"
+                id={`option-${option.value}`}
+                name="rating"
+                value={option.value}
+                checked={selectedAnswer === option.value}
+                onChange={() => handleSelect(option.value)}
+                className="radio-input sr-only"
+              />
+              <label htmlFor={`option-${option.value}`} className="radio-label">
+                {option.label}
+              </label>
+            </div>
           ))}
         </div>
-
-        <button 
-          className="next-button" 
-          onClick={handleSubmit}
-          disabled={selectedAnswer === null}
-        >
-          {currentIndex === totalQuestions - 1 ? 'Finish' : 'Next'}
-        </button>
+      </div>
+      <div className="card-footer">
+        <div className="button-group">
+          <button
+            className="btn btn-outline"
+            onClick={handlePrevious}
+            disabled={currentIndex === 0}
+          >
+            Previous
+          </button>
+          <button
+            className="btn btn-primary"
+            onClick={handleNext}
+            disabled={selectedAnswer === null}
+          >
+            {isLastQuestion ? 'View Results' : 'Next'}
+          </button>
+        </div>
       </div>
     </div>
   );
