@@ -53,24 +53,34 @@ p {
 }
 
 button {
-  background-color: #3498db;
+  background-color: #2563eb;
   color: white;
   border: none;
   padding: 12px 24px;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:disabled {
-  background-color: #bdc3c7;
+  background-color: #9ca3af;
   cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
 .progress-bar {
@@ -84,7 +94,7 @@ button:disabled {
 
 .progress-fill {
   height: 100%;
-  background-color: #3498db;
+  background-color: #2563eb;
   transition: width 0.3s ease;
 }
 
